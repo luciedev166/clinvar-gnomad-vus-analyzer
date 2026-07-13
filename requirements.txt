@@ -1,0 +1,69 @@
+# ClinVar + gnomAD VUS Analyzer
+
+> **Status: In Progress**
+
+A beginner-friendly bioinformatics project that explores variants of uncertain significance, or VUS, from one cancer-related gene using public data from ClinVar and gnomAD.
+
+## Project Overview
+
+This project will analyze around 10–20 germline missense variants from a selected cancer-related gene.
+
+For each variant, the project will collect:
+
+* ClinVar classification and review information
+* Variant identifiers and protein changes
+* gnomAD population allele frequencies
+* Available evidence that may lean more suspicious or more likely benign
+
+The collected information will be organized into a clean evidence table and displayed through a Streamlit web application.
+
+## Project Goals
+
+* Learn how ClinVar and gnomAD are used in bioinformatics
+* Practice collecting and cleaning biological data with Python
+* Build a reproducible variant evidence table
+* Create an interactive Streamlit web application
+* Explain genetic evidence in a clear and responsible way
+
+## Planned Outputs
+
+* Python scripts for processing variant data
+* A CSV evidence table
+* An exploratory Jupyter notebook
+* A Streamlit web application
+* Documentation of the methods, findings, and limitations
+
+## Important Disclaimer
+
+This project is for educational and research purposes only.
+
+It does not diagnose patients, provide medical advice, or officially classify genetic variants. The application only summarizes publicly available evidence and shows the general direction in which the evidence may lean.
+
+## Planned Project Structure
+
+```text
+clinvar-gnomad-vus-analyzer/
+├── app.py
+├── data/
+├── notebooks/
+├── src/
+├── README.md
+└── requirements.txt
+```
+
+## Data Sources
+
+* ClinVar
+* Genome Aggregation Database (gnomAD)
+
+## Current Progress
+
+* [x] Created the project repository
+* [x] Defined the initial project scope
+* [ ] Select one cancer-related gene
+* [ ] Select 10–20 variants of uncertain significance
+* [ ] Collect ClinVar data
+* [ ] Collect gnomAD frequency data
+* [ ] Build the evidence table
+* [ ] Develop the Streamlit application
+* [ ] Document the findings and limitations
