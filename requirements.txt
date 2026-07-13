@@ -60,10 +60,10 @@ clinvar-gnomad-vus-analyzer/
 
 * [x] Created the project repository
 * [x] Defined the initial project scope
-* [ ] Select one cancer-related gene
+* [x] Select one cancer-related gene
 * [ ] Select 10–20 variants of uncertain significance
 * [ ] Collect ClinVar data
 * [ ] Collect gnomAD frequency data
-* [ ] Build the evidence table
+* [ ] Build the evidence table  
 * [ ] Develop the Streamlit application
 * [ ] Document the findings and limitations
