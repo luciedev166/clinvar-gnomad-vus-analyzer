@@ -1,0 +1,2 @@
+# Large downloaded genomics datasets
+data/raw/*.vcf.gz
