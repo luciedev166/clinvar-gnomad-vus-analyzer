@@ -9,8 +9,7 @@ NULLABLE_INT_COLUMNS = ["clinvar_variation_id", "protein_position"]
 DATE_COLUMNS = ["clinvar_last_evaluated"]
 
 
-def load_app_dataset(path: Path = DATA_PATH) -> pd.DataFrame:
-    """Read atm_vus_app_dataset.csv and restore its intended dtypes."""
+def load_app_dataset(path: Path = DATA_PATH):
     if not path.exists():
         raise FileNotFoundError(
             f"App dataset not found at {path}. Run notebooks/04_build_app_dataset.ipynb first."
