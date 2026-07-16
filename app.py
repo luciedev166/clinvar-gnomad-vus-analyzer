@@ -55,8 +55,6 @@ SEARCH_COLUMNS = [
 
 @st.cache_data
 def get_condition_options(df: pd.DataFrame) -> list[str]:
-    """Split the comma-separated `condition` column into individual,
-    de-duplicated condition names for the filter dropdown."""
     conditions = set()
     for value in df["condition"].dropna():
         for part in value.split(","):
@@ -74,12 +72,7 @@ def filter_dataset(
     conditions: list[str],
     af_range: tuple[float, float],
 ) -> pd.DataFrame:
-    """Apply the sidebar's search box and filters to the dataset.
 
-    Kept as a plain function (df and values in, filtered df out) rather
-    than reading widget state directly, so it can be tested without
-    Streamlit and reused if we add more entry points later.
-    """
     filtered = df
 
     if search_text.strip():
